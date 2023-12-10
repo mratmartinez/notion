@@ -16,6 +16,7 @@ include $(TOPDIR)/build/system-inc.mk
 INCLUDES += $(LIBTU_INCLUDES) $(LUA_INCLUDES)
 
 CFLAGS += $(XOPEN_SOURCE) $(C99_SOURCE)
+CFLAGS += -I/usr/local/include
 
 SOURCES=readconfig.c luaextl.c misc.c
 
