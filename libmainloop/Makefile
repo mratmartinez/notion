@@ -11,6 +11,7 @@ include $(TOPDIR)/build/system-inc.mk
 INCLUDES += $(LIBTU_INCLUDES) $(LIBEXTL_INCLUDES) -I..
 
 CFLAGS += $(XOPEN_SOURCE) $(C99_SOURCE)
+CFLAGS += -I/usr/local/include
 
 SOURCES = select.c defer.c signal.c hooks.c exec.c
 
