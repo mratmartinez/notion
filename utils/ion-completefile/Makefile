@@ -8,7 +8,8 @@ include $(TOPDIR)/build/system-inc.mk
 
 ######################################
 
-LIBS += $(LIBTU_LIBS)
+LDFLAGS += -L/usr/local/lib
+LIBS += -lintl $(LIBTU_LIBS)
 INCLUDES += $(LIBTU_INCLUDES)
 CFLAGS += $(XOPEN_SOURCE) $(INCLUDES)
 
